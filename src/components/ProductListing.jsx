@@ -25,7 +25,7 @@ function ProductListing() {
         {
         products.map((product, index)=>{
           return(
-        <Col xs ={12} sm ={6} md ={4} lg ={3} xxl={3} key={index}>
+        <Col xs ={12} sm ={6} md ={4} lg ={3} xxl={2} key={index}>
          <Products ProductData ={product}/>
         </Col>
           )

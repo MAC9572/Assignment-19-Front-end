@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import ProductListing from './components/ProductListing';
 import ProductDetails from './components/ProductDetails';
-import { Root } from './routes/root';
-
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import Root from './routes/root';
+import ProductSearch from './components/ProductSearch';
 
 const router =createBrowserRouter([
 
   {
     path: "/",
-    element: <Root />,
+    element: <Root/>,
 
   children: [
 
@@ -20,6 +20,12 @@ const router =createBrowserRouter([
   },
 
   {
+    path: "/product-search",
+    element: <ProductSearch/>,
+  },
+
+
+  {
     path: "/product-details/:id",
     element: <ProductDetails />,
   },
@@ -27,9 +33,6 @@ const router =createBrowserRouter([
   }
 
 ]);
-
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

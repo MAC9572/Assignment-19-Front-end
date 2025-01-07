@@ -44,6 +44,7 @@ h1{
 .product-desc{
     padding-top: 20px;
     font-size: 18px;
+    text-align: center;
 }
 
 h2{
@@ -54,4 +55,15 @@ h2{
 
 .icon{
     margin-right: 10px;
+}
+
+#price{
+    color: green;
+}
+
+.searchKey{
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 30px;
 }
